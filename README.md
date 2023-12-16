@@ -39,6 +39,28 @@ python -m ipykernel install --user --name=coppermap --display-name "coppermap"
 4. Open the notebook: `CopperMap.ipynb`.
 5. Follow the instructions within the notebook for predictions and ligand suggestions.
 
+### Alternative to .yml Environments
+
+If you encounter issues with .yml files, you can manually install the required libraries for CopperMap. Ensure you have [conda](https://docs.conda.io/en/latest/miniconda.html) installed before proceeding.
+
+1. **Pandas:**
+   ```bash
+   conda install pandas
+   ```
+2. **Matplotlib:**
+   ```bash
+   conda install matplotlib
+   ```
+3. **RDKit:**
+   ```bash
+   conda install -c conda-forge rdkit
+   ```
+4. **Scikit-learn (v.1.2.2):**
+   ```bash
+   conda install scikit-learn=1.2.2
+   ```
+Remember to activate your environment before launching CopperMap.
+
 ## Citation
 
 If you find CopperMap useful, please cite our manuscript:
