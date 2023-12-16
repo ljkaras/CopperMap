@@ -8,6 +8,10 @@ CopperMap is a Jupyter notebook developed with the goal of enhacing success in C
 
 CopperMap is derived from our manuscript posted on [ChemRxiv](https://chemrxiv.org/engage/chemrxiv/article-details/6532eb5cc3693ca993c1ce40). For a more in-depth understanding of the model, its training, and validation, please refer to the manuscript.
 
+## GitHub Repository Reference:
+
+The complete dataset and notebook utilized for training the model can be accessed from the dedicated [GitHub repository](https://github.com/ljkaras/ullmann_project) for the Ullmann Coupling project.
+
 ## Features
 
 - **Prediction Tool:** Find out the likelihood of success for a given pair of substrates.
