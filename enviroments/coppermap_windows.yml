@@ -1,4 +1,4 @@
-name: ullmann_pred
+name: coppermap
 channels:
   - conda-forge
   - defaults
