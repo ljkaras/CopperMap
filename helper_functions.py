@@ -250,6 +250,8 @@ def display_ligands_info(neighbor, P1_info, P2_info, ligands):
     - P2_info (dict): Information about the second product, including top ligands.
     - ligands (dict): Dictionary mapping ligand names to PubChem links.
     """
+    print(f"\nBased on that, here are the ligands we suggest trying for this reaction:")
+
     # Extract the names of top ligands from both P1 and P2
     ligands_P1 = {P1_info[f'Top_{i}_Ligand'] for i in range(1, 4)}
     ligands_P2 = {P2_info[f'Top_{i}_Ligand'] for i in range(1, 4)}
@@ -398,9 +400,51 @@ def draw_reaction_image(amine_smiles, br_smiles):
 
     # Get the PNG image
     png = d2d.GetDrawingText()
+    
+    print(f"\nEntered substrates and expected product:")
 
     # Display the image
     display(Image(png))
+# Function to print the tool header
+    header = "-" * 84
+    formatted_title = f"|{title:^82}|"
+    print(header)
+    print(formatted_title)
+    print(header)
+# Function to display logos:
+def display_image(image_path):
+    display(Image(filename=image_path))
+# workflow function
+def workflow():
+    
+    # Yield prediction section:
+    display_image("imports/prediction_tool.png")
+
+    amine_smiles, amine_pred = get_input("primary amine", amine_df, "N𝛿–")
+    br_smiles, br_pred = get_input("aryl-bromide", br_df, "Steric")
+
+    draw_reaction_image(amine_smiles, br_smiles)
+    
+    x_target_norm, y_target_norm, input_data = normalize_and_stack(amine_pred, br_pred, loaded_x_values, loaded_y_values)
+    
+    confidence_pred, message = get_confidence_prediction(x_target_norm, y_target_norm, confidence_model)
+
+    P1, P1_info, P2, P2_info = get_nearest_neighbors(input_data, knn_model, training_dict)
+
+    plot_confidence_contour(x_grid, y_grid, input_data, confidence_pred, P1_info, P2_info)
+    
+    # Ligand suggestion section: 
+    display_image("imports/ligand_suggestion_tool.png")
+
+    ligands_P1_info = get_ligands_info(P1_info)
+    ligands_P2_info = get_ligands_info(P2_info)
+
+    print_product_info(P1, ligands_P1_info, 1)
+    print_product_info(P2, ligands_P2_info, 2)
+
+    display_ligands_info(P1, P1_info, P2_info, ligands)
+    ligands_P1_info = get_ligands_info(P1_info)
+    ligands_P2_info = get_ligands_info(P2_info)
 
 # PICKLE FILES:
     
