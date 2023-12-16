@@ -405,12 +405,6 @@ def draw_reaction_image(amine_smiles, br_smiles):
 
     # Display the image
     display(Image(png))
-# Function to print the tool header
-    header = "-" * 84
-    formatted_title = f"|{title:^82}|"
-    print(header)
-    print(formatted_title)
-    print(header)
 # Function to display logos:
 def display_image(image_path):
     display(Image(filename=image_path))
