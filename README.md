@@ -15,6 +15,8 @@ CopperMap is derived from our manuscript posted on [ChemRxiv](https://chemrxiv.o
 
 ## Getting-Started
 
+Ensure you have [conda](https://docs.conda.io/en/latest/miniconda.html) installed before proceeding.
+
 1. Clone this repository.
 ```shell
 git clone https://github.com/ljkaras/CopperMap.git
