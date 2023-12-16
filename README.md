@@ -12,6 +12,24 @@ CopperMap is derived from our manuscript posted on [ChemRxiv](https://chemrxiv.o
 
 The complete dataset and notebook utilized for training the model can be accessed from the dedicated [GitHub repository](https://github.com/ljkaras/ullmann_project) for the Ullmann Coupling project.
 
+## Domain of Applicability:
+
+The training of CopperMap relied on a consistent set of reaction conditions:
+
+- **Temperature:** 110°C
+- **Solvent:** DMA
+- **Base:** K₃PO₄
+- **Cu Source:** CuI
+- **Concentrations:**
+  - Aryl-bromide [1 eq]
+  - Primary amine [1.2 eq]
+  - CuI [10 mol%]
+  - Ligand [20 mol%]
+  - Solvent: 0.25 microM
+  - Base [2 eq]
+
+We observed a degree of transferability of these conditions in our study, but the yield-predictions should be taken carefully for reactions in different conditions. For more details, refer to the [manuscript](https://chemrxiv.org/engage/chemrxiv/article-details/6532eb5cc3693ca993c1ce40).
+
 ## Features
 
 - **Prediction Tool:** Find out the likelihood of success for a given pair of substrates.
