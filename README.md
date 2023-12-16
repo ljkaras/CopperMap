@@ -1,8 +1,17 @@
 ![CopperMap Logo](CopperMap.png)
 
-CopperMap is a Jupyter notebook developed to predict outcomes (below or above 20% yield) of Cu-catalyzed C–N couplings (Ullmann couplings) between primary amines and aryl-bromides within the computed library. Additionally, it generates a list of suggested ligands expected to be the best performers for a given pair of coupling partners based on experimental data used to train the model. CopperMap is derived from our manuscript posted on [ChemRxiv](https://chemrxiv.org/engage/chemrxiv/article-details/6532eb5cc3693ca993c1ce40) featuring a library of 497 primary amines, 385 aryl-bromides, and 36 ligands.
+CopperMap is a Jupyter notebook developed with the goal of enhacing success in Cu-catalyzed C–N couplings (Ullmann couplings). The machine learning algorithm behind CopperMap was trained and validated using approximately 1000 experimental data points and was found to predict the yield outcome of Ullmann couplings (below or above 20% yield) between primary amines and aryl-bromides with an average accuracy of 89%. CopperMap also includes a ligand suggestion tool capable of finding the most probable working ligands for a given pair of coupling partners based on experimental results for similar compounds. 
 
-## Usage
+## Manuscript Reference
+
+CopperMap is derived from our manuscript posted on [ChemRxiv](https://chemrxiv.org/engage/chemrxiv/article-details/6532eb5cc3693ca993c1ce40). For a more in-depth understanding of the model, its training, and validation, please refer to the manuscript.
+
+## Features
+
+- **Prediction Tool:** Find out the likelihood of success for a given pair of substrates.
+- **Ligand Suggestion Tool:** Receive information about the ligands most likely to work for the specific coupling partners.
+
+## Getting-Started
 
 1. Clone this repository.
 ```shell
