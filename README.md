@@ -94,6 +94,4 @@ If you find CopperMap useful, please cite our manuscript:
 ## Credits
 
 Developed by [The Sigman Lab](https://www.sigmanlab.com)  
-Tool Developer: Lucas Karas
-Library Developer: David Vogt
-Experimental Results: Moe Samha
+Tool Developer: Lucas Karas; Library Developer: David Vogt; Experimental Results: Moe Samha
