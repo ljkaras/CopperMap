@@ -20,12 +20,11 @@ The training of CopperMap relied on a consistent set of reaction conditions:
 - **Solvent:** DMA
 - **Base:** K₃PO₄
 - **Cu Source:** CuI
-- **Concentrations:**
+- **Concentrations [0.25 M]:**
   - Aryl-bromide [1 eq]
   - Primary amine [1.2 eq]
   - CuI [10 mol%]
   - Ligand [20 mol%]
-  - Solvent: 0.25 microM
   - Base [2 eq]
 
 We observed a degree of transferability of these conditions in our study, but the yield-predictions should be taken carefully for reactions in different conditions. For more details, refer to the [manuscript](https://chemrxiv.org/engage/chemrxiv/article-details/6532eb5cc3693ca993c1ce40).
