@@ -6,7 +6,7 @@ CopperMap is a Jupyter notebook developed with the goal of enhacing success in C
 
 ## Manuscript Reference
 
-CopperMap is derived from our manuscript posted on [Science Advances](https://www.science.org/doi/10.1126/sciadv.adn3478). For a more in-depth understanding of the model, its training, and validation, please refer to the manuscript.
+CopperMap is derived from our manuscript published on [Science Advances](https://www.science.org/doi/10.1126/sciadv.adn3478). For a more in-depth understanding of the model, its training, and validation, please refer to the manuscript.
 
 ## GitHub Repository Reference:
 
