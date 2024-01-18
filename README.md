@@ -6,7 +6,7 @@ CopperMap is a Jupyter notebook developed with the goal of enhacing success in C
 
 ## Manuscript Reference
 
-CopperMap is derived from our manuscript posted on [ChemRxiv](https://chemrxiv.org/engage/chemrxiv/article-details/6532eb5cc3693ca993c1ce40). For a more in-depth understanding of the model, its training, and validation, please refer to the manuscript.
+CopperMap is derived from our manuscript posted on [Science Advances](https://www.science.org/doi/10.1126/sciadv.adn3478). For a more in-depth understanding of the model, its training, and validation, please refer to the manuscript.
 
 ## GitHub Repository Reference:
 
@@ -27,7 +27,7 @@ The training of CopperMap relied on a consistent set of reaction conditions:
   - Ligand [20 mol%]
   - Base [2 eq]
 
-We observed a degree of transferability of these conditions in our study, but the yield-predictions should be taken carefully for reactions in different conditions. For more details, refer to the [manuscript](https://chemrxiv.org/engage/chemrxiv/article-details/6532eb5cc3693ca993c1ce40).
+We observed a degree of transferability of these conditions in our study, but the yield-predictions should be taken carefully for reactions in different conditions. For more details, refer to the [manuscript](https://www.science.org/doi/10.1126/sciadv.adn3478).
 
 ## Features
 
@@ -88,7 +88,7 @@ Remember to activate your environment before launching CopperMap.
 
 If you find CopperMap useful, please cite our manuscript:
 
-> M. Samha,# L. Karas,# D. Vogt, E. Odogwu, J. Elward, J. Crawford, J. Steves, M. Sigman. Predicting Success in Cu-Catalyzed C–N Coupling Reactions using Data Science. ChemRxiv, 2023. DOI: 10.26434/chemrxiv-2023-f50w6.
+> M. Samha,# L. Karas,# D. Vogt, E. Odogwu, J. Elward, J. Crawford, J. Steves, M. Sigman. Predicting Success in Cu-Catalyzed C–N Coupling Reactions using Data Science. Science Advances, 2024, 10, eadn3478. DOI: 10.1126/sciadv.adn3478.
 
 ## Credits
 
