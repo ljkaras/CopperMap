@@ -454,9 +454,9 @@ best_ligands = load_pickle('best_ligands.pkl')
 x_grid, y_grid = load_pickle('grid_data.pkl')
 # Load a dictionary containing training data
 training_dict = load_pickle('training_dict.pkl')
-# Read substrates and ligands DataFrames from pickle
-br_df = load_pickle('br_df.pkl')
-amine_df = load_pickle('amine_df.pkl')
+# Read substrates and ligands DataFrames from .csv or pickle
+br_df = pd.read_csv('./imports/br_df.csv')
+amine_df = pd.read_csv('./imports/amine_df.csv')
 ligands_df = load_pickle('ligands_df.pkl')
 # Load pubchem links for ligands
 ligands = load_pickle('pubchem_lig.pkl')
